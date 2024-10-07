@@ -7,7 +7,7 @@ public class Auto {
 
     @Override
     public String toString() {
-        return "Autó: " + "rendszám:" + rendszam + ", szín=" + szin + ", extra=" + extra;
+        return "Autó\n " + "Rendszám: " + rendszam + ". Szín: " + szin + ". Extra: " + extra;
     }
 
     public Auto(){
@@ -21,11 +21,22 @@ public class Auto {
     public Auto(String rendszam, String szin){
         this(rendszam,szin, "nincs");
     }
-    
     public Auto(String rendszam, String szin, String extra){
-        this.rendszam = rendszam;
-        this.szin = szin;
-        this.extra = extra;
+        if(rendszam.length() == 0){
+            this.rendszam = "AAA-BBB";
+        }else{
+            this.rendszam = rendszam;
+        }
+        if(szin.length() == 0){
+            this.szin = "Fekete";
+        }else{
+            this.szin = szin;
+        }
+        if(extra.length() == 0 ){
+            this.extra = "Nincs";
+        }else{
+            this.extra = extra;
+        }    
     }
     
     public void setSzin(String szin) {

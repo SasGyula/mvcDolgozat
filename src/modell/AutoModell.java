@@ -12,15 +12,12 @@ public class AutoModell {
         this.rendszam = JOptionPane.showInputDialog("Rendszám:");
         this.extra = JOptionPane.showInputDialog("Extra:");
     }
-    
     public String getSzin() {
         return szin;
     }
-
     public String getRendszam() {
         return rendszam;
     }
-
     public String getExtra() {
         return extra;
     }

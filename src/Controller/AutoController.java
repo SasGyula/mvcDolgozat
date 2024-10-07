@@ -11,5 +11,4 @@ public class AutoController {
         this.auto = new Auto(m.getRendszam(), m.getSzin(), m.getExtra());
         this.m.kiir(this.auto.toString());
     }
-    
 }
